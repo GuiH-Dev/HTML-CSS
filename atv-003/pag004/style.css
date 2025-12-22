@@ -1,0 +1,18 @@
+body{
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: black;
+    text-align: center;
+    
+}
+p{
+    text-align: center;
+    
+}
+iframe{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
