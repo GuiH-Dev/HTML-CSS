@@ -4,10 +4,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 :root{
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: white;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -27,6 +38,16 @@ header > p {
     padding-bottom: 50px;
 }
 
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
 h1 {
     display: block;
     font-size: 2em;
@@ -38,12 +59,6 @@ h1 {
     unicode-bidi: isolate;
 }
 
-body{
-    min-height: 100vh;
-    background-color: white;
-    font-family: var(--fonte1);
-}
-
 section#img01 {
     background-image: url(../imagens/background001.jpg);
     background-position: right center;
@@ -53,23 +68,6 @@ section#img02 {
     background-image: url(../imagens/background002.jpg);
 }
 
-section.imagem {
-    background-color: rgb(51, 51, 51);
-    color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-section.normal {
-    background-color: white;
-    color: black;
-}
-
-section > p {
-    padding-bottom: 2em;
-}
-
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -77,6 +75,28 @@ section {
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 3.5vw;
+} 
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+} 
+
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 p {
@@ -85,11 +105,6 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
-
-footer {
-    display: block;
     unicode-bidi: isolate;
 }
 
